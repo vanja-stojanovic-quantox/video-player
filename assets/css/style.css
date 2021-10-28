@@ -1,0 +1,170 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+body .video {
+  width: 370px;
+  margin: 20px auto 0 auto;
+}
+@media only screen and (min-device-width: 768px) {
+  body .video {
+    width: 500px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-device-width: 1440px) {
+  body .video {
+    width: 768px;
+  }
+}
+body .video video {
+  width: 100%;
+}
+body .video .progress-bar {
+  width: 370px;
+  height: 8px;
+  margin: 0 auto;
+  border-radius: 35px;
+  background-color: #c6c6c6;
+}
+body .video .progress-bar:hover, body .video .progress-bar:active {
+  cursor: pointer;
+}
+@media only screen and (min-device-width: 768px) {
+  body .video .progress-bar {
+    width: 500px;
+  }
+}
+@media only screen and (min-device-width: 1440px) {
+  body .video .progress-bar {
+    width: 768px;
+  }
+}
+body .video .progress-bar .progress-bar-inner {
+  width: 0;
+  height: 8px;
+  border-radius: 35px;
+  background-color: #274472;
+}
+body .video .container {
+  width: 370px;
+  margin: 0 auto;
+}
+@media only screen and (min-device-width: 768px) {
+  body .video .container {
+    width: 500px;
+  }
+}
+@media only screen and (min-device-width: 1440px) {
+  body .video .container {
+    width: 768px;
+  }
+}
+body .video .container .toolbar {
+  width: 370px;
+  margin: 6px auto 0 auto;
+  border-radius: 20px;
+  background-color: #ececec;
+}
+@media only screen and (min-device-width: 768px) {
+  body .video .container .toolbar {
+    width: 500px;
+  }
+}
+@media only screen and (min-device-width: 1440px) {
+  body .video .container .toolbar {
+    width: 768px;
+  }
+}
+body .video .container .toolbar .play-icon {
+  width: 20px;
+  position: relative;
+  top: 7px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+body .video .container .toolbar .play-icon:hover, body .video .container .toolbar .play-icon:active {
+  cursor: pointer;
+}
+body .video .container .toolbar .volume-icon {
+  width: 20px;
+  position: relative;
+  top: 7px;
+}
+body .video .container .toolbar .volume-icon:hover, body .video .container .toolbar .volume-icon:active {
+  cursor: pointer;
+}
+body .video .container .toolbar .volume-bar {
+  width: 50px;
+  height: 5px;
+  position: relative;
+  top: -2px;
+  background-color: #c6c6c6;
+  mix-blend-mode: normal;
+  border-radius: 2px;
+  display: inline-block;
+}
+body .video .container .toolbar .volume-bar:hover, body .video .container .toolbar .volume-bar:active {
+  cursor: pointer;
+}
+body .video .container .toolbar .volume-bar .volume-bar-inner {
+  background-color: #000000;
+  border-radius: 2px;
+  width: 50px;
+  height: 5px;
+}
+body .video .container .toolbar .expand-icon {
+  width: 20px;
+  float: right;
+  position: relative;
+  top: 10px;
+  padding-right: 6px;
+}
+body .video .container .toolbar .expand-icon:hover, body .video .container .toolbar .expand-icon:active {
+  cursor: pointer;
+}
+body .video .container .toolbar .change-speed-button {
+  background-color: #000000;
+  color: #fafafa;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 10px;
+  margin: 10px;
+}
+body .video .container .toolbar .change-speed-button:hover, body .video .container .toolbar .change-speed-button:active {
+  cursor: pointer;
+}
+body .video .container .change-speed {
+  width: 95px;
+  margin-top: 5px;
+  margin-left: 125px;
+  background-color: #3c3c3c;
+  color: #fafafa;
+  border: 1px solid rgba(47, 47, 47, 0.1);
+  border-radius: 5px;
+  display: none;
+}
+body .video .container .change-speed .speed-value {
+  display: block;
+  text-align: center;
+  height: 25px;
+}
+body .video .container .change-speed .speed-value:hover, body .video .container .change-speed .speed-value:active {
+  cursor: pointer;
+  background-color: #c6c6c6;
+}
+body .video .active {
+  background-color: #c6c6c6;
+}
+body .fullscreen {
+  position: absolute;
+  width: 100%;
+}
+@media only screen and (min-device-width: 768px) {
+  body .fullscreen {
+    bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,198 @@
+$backgroundColor: #f5f5f5;
+$colorBlue: #274472;
+$colorWhitesmoke: #fafafa;
+$colorBlack: #000000;
+$colorDarkGrey: rgb(60, 60, 60);
+$colorGrey: #c6c6c6;
+$colorLightGrey: #ececec;
+$borderColor: rgba(47, 47, 47, 0.1);
+
+body {
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+
+    .video {
+        width: 370px;
+        margin: 20px auto 0 auto;
+
+        @media only screen and (min-device-width: 768px) {
+            width: 500px;
+            margin-top: 50px;
+        }
+
+        @media only screen and (min-device-width: 1440px) {
+            width: 768px;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .progress-bar {
+            width: 370px;
+            height: 8px;
+            margin: 0 auto;
+            border-radius: 35px;
+            background-color: $colorGrey;
+
+            &:hover,
+            &:active {
+                cursor: pointer;
+            }
+
+            @media only screen and (min-device-width: 768px) {
+                width: 500px;
+            }
+
+            @media only screen and (min-device-width: 1440px) {
+                width: 768px;
+            }
+
+            .progress-bar-inner {
+                width: 0;
+                height: 8px;
+                border-radius: 35px;
+                background-color: $colorBlue;
+            }
+        }
+
+        .container {
+            width: 370px;
+            margin: 0 auto;
+
+            @media only screen and (min-device-width: 768px) {
+                width: 500px;
+            }
+
+            @media only screen and (min-device-width: 1440px) {
+                width: 768px;
+            }
+
+            .toolbar {
+                width: 370px;
+                margin: 6px auto 0 auto;
+                border-radius: 20px;
+                background-color: $colorLightGrey;
+
+                @media only screen and (min-device-width: 768px) {
+                    width: 500px;
+                }
+
+                @media only screen and (min-device-width: 1440px) {
+                    width: 768px;
+                }
+
+                .play-icon {
+                    width: 20px;
+                    position: relative;
+                    top: 7px;
+                    padding-left: 5px;
+                    padding-right: 10px;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                    }
+                }
+
+                .volume-icon {
+                    width: 20px;
+                    position: relative;
+                    top: 7px;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                    }
+                }
+
+                .volume-bar {
+                    width: 50px;
+                    height: 5px;
+                    position: relative;
+                    top: -2px;
+                    background-color: $colorGrey;
+                    mix-blend-mode: normal;
+                    border-radius: 2px;
+                    display: inline-block;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                    }
+
+                    .volume-bar-inner {
+                        background-color: $colorBlack;
+                        border-radius: 2px;
+                        width: 50px;
+                        height: 5px;
+                    }
+                }
+
+                .expand-icon {
+                    width: 20px;
+                    float: right;
+                    position: relative;
+                    top: 10px;
+                    padding-right: 6px;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                    }
+                }
+
+                .change-speed-button {
+                    background-color: $colorBlack;
+                    color: $colorWhitesmoke;
+                    border-radius: 25px;
+                    border: 0;
+                    padding: 5px 10px;
+                    margin: 10px;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .change-speed {
+                width: 95px;
+                margin-top: 5px;
+                margin-left: 125px;
+                background-color: $colorDarkGrey;
+                color: $colorWhitesmoke;
+                border: 1px solid $borderColor;
+                border-radius: 5px;
+                display: none;
+
+                .speed-value {
+                    display: block;
+                    text-align: center;
+                    height: 25px;
+
+                    &:hover,
+                    &:active {
+                        cursor: pointer;
+                        background-color: $colorGrey;
+                    }
+                }
+            }
+        }
+
+        .active {
+            background-color: $colorGrey;
+        }
+    }
+
+    .fullscreen {
+        position: absolute;
+        width: 100%;
+
+        @media only screen and (min-device-width: 768px) {
+            bottom: 10px;
+        }
+    }
+}

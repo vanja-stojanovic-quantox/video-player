@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/videocam.svg">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="assets/js/script.js"></script>
+        <title>Video player</title>
+    </head>
+    <body>
+        <div class="video">
+            <video>
+                <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f3/Big_Buck_Bunny_first_23_seconds_1080p.ogv/Big_Buck_Bunny_first_23_seconds_1080p.ogv.480p.webm" type="video/webm">
+            </video>
+            <div id="fullscreen">
+                <div class="progress-bar fullscreen-progress-bar" onclick="playExactSecond(event)">
+                    <div class="progress-bar-inner"></div>
+                </div>
+                <div class="container">
+                    <div class="toolbar">
+                        <img class="play-icon" src="./assets/images/play.svg" onclick="playVideo(this)">
+                        <img class="volume-icon" src="./assets/images/volume-high.svg" onclick="muteVideo(this)">
+                        <div class="volume-bar" onclick="changeVolume(event)">
+                            <div id="current-volume" class="volume-bar-inner"></div>
+                        </div>
+                        <button class="change-speed-button" onclick="changeSpeedView()">Change speed</button>
+                        <span class="video-timer">00:00:00</span>
+                        <img class="expand-icon" src="./assets/images/expand-outline.svg" onclick="fullScreen(event)">
+                    </div>
+                    <div class="change-speed">
+                        <span class="speed-value" onclick="changeSpeed(this, 0.5)">0.5</span>
+                        <span class="speed-value" onclick="changeSpeed(this, 0.75)">0.75</span>
+                        <span class="speed-value" onclick="changeSpeed(this, 1.0)">1</span>
+                        <span class="speed-value" onclick="changeSpeed(this, 1.5)">1.5</span>
+                        <span class="speed-value" onclick="changeSpeed(this, 2.0)">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
