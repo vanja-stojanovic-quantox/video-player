@@ -1,12 +1,12 @@
-var playFlag = true;
-var muteFlag = true;
-var speedFlag = true;
-var fullscreenFlag = true;
-var videoVolume = 100;
-var currentVolume;
+let playFlag = true;
+let muteFlag = true;
+let speedFlag = true;
+let fullscreenFlag = true;
+let videoVolume = 100;
+let currentVolume;
 
-var timer = null;
-var interval = 1000;
+let timer = null;
+const interval = 1000;
 
 function playVideo(el) {
     const videoEl = document.querySelector('video');
